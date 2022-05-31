@@ -13,6 +13,7 @@ root.render(
   <React.StrictMode>
     <Provider store={store}>
       <App />
+    {/* <h1>welcome you</h1> */}
     </Provider>
   </React.StrictMode>
 );

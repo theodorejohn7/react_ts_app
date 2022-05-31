@@ -3,6 +3,7 @@ import { usersListReducer } from "./slice/userSlice";
 import { authenticationReducer } from "./slice/loginSlice";
 
 export const store = configureStore({
+
   reducer: {
     authentication: authenticationReducer,
     userList: usersListReducer,
