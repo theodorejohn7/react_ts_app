@@ -1,5 +1,5 @@
 import { getAccessToken } from "./localStorage";
-import { env_var } from "../config/env.ts";
+import { env_var } from "../config/env";
 
 export interface AuthPayload {
   username: string;

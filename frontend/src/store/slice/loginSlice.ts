@@ -3,8 +3,7 @@ import { authenticate } from "../../services/authenticationService";
 import { setTokens } from "../../services/localStorage";
 import { RootState } from "../store";
 
-import { History} from "history";
-
+import { history } from "../../utils/history";
 
 
 export interface IAuthentication {
@@ -43,8 +42,8 @@ export const authenticateUser = (userData: any) => async (dispatch: any) => {
         dispatch(success(authData.data));
         history.push('/v1');
     }
-    catch(err) {
-        dispatch(error(err));
+    catch(err:any ) {
+        dispatch(error(err ));
     }
 }
 
